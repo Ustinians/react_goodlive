@@ -1,5 +1,5 @@
 import React from "react"
-import "./index.less"
+import "./index.less";
 
 const Star = (props) =>{
     let num = props.num;

@@ -31,5 +31,14 @@ module.exports = [
         rentType: "整租",
         commentState: 2,
         img: "http://iwenwiki.com/api/livable/shop/z6.jpg"
+    },
+    {
+        id: Math.random().toString().slice(2),
+        title: "整租 · 新郑南区7居室-南北",
+        houseType: "2室1厅2卫 - 96m²",
+        price: "9000",
+        rentType: "整租",
+        commentState: 2,
+        img: "https://tgi1.jia.com/126/214/26214020.jpg"
     }
 ]

@@ -14,7 +14,7 @@ export default function HeaderNav(props) {
             </Link>
         </div>
         <div className='home-header-right float-right'>
-            <i className='iconfont icon-car'></i>
+            <Link to="/order"><i className='iconfont icon-car'></i></Link>
         </div>
         <div className='home-header-middle'>
             <div className='search-container'>

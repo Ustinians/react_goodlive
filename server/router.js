@@ -6,6 +6,7 @@ const homehot = require("./data/home/homehot");
 const searchData = require("./data/search");
 const detailsData = require("./data/details");
 const commentData = require("./data/comment");
+const orderData = require("./data/order");
 
 
 // GET方法获取首页热门数据
@@ -54,6 +55,15 @@ router.get("/comment",(req,res) => {
     res.send({
         status: 200,
         result: commentData
+    })
+})
+
+// GET方法获取订单信息
+router.get("/order",(req,res) => {
+    const username = url.parse(req.url,true).query.username;
+    res.send({
+        status: 200,
+        result: orderData
     })
 })
 

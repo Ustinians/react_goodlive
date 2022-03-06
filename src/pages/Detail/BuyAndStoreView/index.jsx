@@ -53,7 +53,7 @@ function BuyAndStoreView(props) {
           !userUtils.collect[props.id] ? <button className='selected' onClick={handleCollection}>收藏</button> 
           :
           <button className='selected o' onClick={handleCollection}>已收藏</button>
-        }item-container
+        }
       </div>
       <div className='item-container float-right'>
         <button className='selected'>购买</button>

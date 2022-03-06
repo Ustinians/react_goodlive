@@ -1,0 +1,26 @@
+.userinfo-container {
+  padding: 10px;
+  display: flex;
+}
+.userinfo-container .head-picture {
+  flex: 1;
+}
+.userinfo-container .head-picture img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.userinfo-container .user-info {
+  flex: 2;
+}
+.userinfo-container .user-info p {
+  height: 30px;
+  line-height: 30px;
+  color: #666;
+}
+.userinfo-container .user-info p span {
+  margin-left: 10px;
+}
+.userinfo-container .user-info .adm-space {
+  margin-top: 10px;
+}

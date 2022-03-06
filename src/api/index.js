@@ -8,7 +8,8 @@ const base = {
     homehot2: "/api/home/hot2",
     search: "/api/search",
     details: "/api/details",
-    comment: "/api/comment"
+    comment: "/api/comment",
+    order: "/api/order"
 }
 
 /**
@@ -41,6 +42,12 @@ const api = {
     // 获取评论
     comment(params){
         return axios.get(base.baseUrl + base.comment,{
+            params
+        })
+    },
+    // 获取订单信息
+    order(params){
+        return axios.get(base.baseUrl + base.order,{
             params
         })
     }

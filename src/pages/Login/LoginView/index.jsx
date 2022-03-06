@@ -22,11 +22,7 @@ function LoginView(props) {
         icon: 'success',
         content: '登陆成功',
       })
-      storageUtils.saveUser({
-        username,
-        code,
-        collect: {}
-      })
+      storageUtils.saveUser(userUtils)
       props.history.goBack();
     }
     else{

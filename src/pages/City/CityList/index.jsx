@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import "./index.less"
 import { withRouter } from "react-router-dom"
 // 引入存储数据的util
@@ -19,8 +19,8 @@ const CityList = (props) => {
             <h3>热门城市</h3>
             <ul className="clear-fix">
                 {
-                    cityList.map(item => (
-                        <li onClick={ () => clickCityHandle(item.label) }><span>{item.label}</span></li>
+                    cityList.map((item,index) => (
+                        <li key={index} onClick={ () => clickCityHandle(item.label) }><span>{item.label}</span></li>
                     ))
                 }
             </ul>

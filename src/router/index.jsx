@@ -11,6 +11,7 @@ import City from "../pages/City"
 import Search from "../pages/Search"
 import Detail from "../pages/Detail"
 import Login from "../pages/Login"
+import Order from "../pages/Order"
 // 引入底部导航组件
 import BottomNav from "../components/BottomNav";
 
@@ -24,6 +25,7 @@ export default class AppRouter extends Component {
                   <Route path="/search" component={Search}></Route>
                   <Route path="/details/:id" component={Detail}></Route>
                   <Route path="/login" component={Login}></Route>
+                  <Route path="/order" component={Order}></Route>
                   <Layout path="/">
                     {/* 底部导航组件 */}
                     <BottomNav></BottomNav>
