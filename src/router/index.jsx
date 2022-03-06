@@ -9,6 +9,8 @@ import Shop from "../pages/Shop";
 import User from "../pages/User";
 import City from "../pages/City"
 import Search from "../pages/Search"
+import Detail from "../pages/Detail"
+import Login from "../pages/Login"
 // 引入底部导航组件
 import BottomNav from "../components/BottomNav";
 
@@ -20,6 +22,8 @@ export default class AppRouter extends Component {
               <Switch>
                   <Route path="/city" component={City}></Route>
                   <Route path="/search" component={Search}></Route>
+                  <Route path="/details/:id" component={Detail}></Route>
+                  <Route path="/login" component={Login}></Route>
                   <Layout path="/">
                     {/* 底部导航组件 */}
                     <BottomNav></BottomNav>

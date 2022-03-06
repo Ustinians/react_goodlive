@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import {withRouter} from "react-router-dom";
 import "./index.less"
 
+
 class SearchInput extends Component {
     state = {
-        keywords: ""
+        keywords: this.props.search || ""
     }
     keyUpHandle = (e) => {
         const {keywords} = this.state;

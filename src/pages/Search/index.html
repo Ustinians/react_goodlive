@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Dog = {
+            1:1,
+            5:2,
+            3:3
+        }
+        console.log(Object.keys(Dog));
+        console.log(Dog[5]);
+        if(!Dog[4]){
+            Dog[4] = 5;
+        }
+        console.log(Dog);
+        Dog[5]++;
+        console.log(Dog);
+        for(d in Dog){
+            console.log(d);
+        }
+    </script>
+</body>
+</html>

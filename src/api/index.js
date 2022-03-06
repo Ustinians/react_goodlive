@@ -6,7 +6,9 @@ const base = {
     baseUrl: "http://localhost:5566",
     homehot1: "/api/home/hot1",
     homehot2: "/api/home/hot2",
-    search: "/api/search"
+    search: "/api/search",
+    details: "/api/details",
+    comment: "/api/comment"
 }
 
 /**
@@ -27,6 +29,18 @@ const api = {
     // 搜索
     search(params){
         return axios.get(base.baseUrl + base.search,{
+            params
+        })
+    },
+    // 获取详情页
+    details(params){
+        return axios.get(base.baseUrl + base.details,{
+            params
+        })
+    },
+    // 获取评论
+    comment(params){
+        return axios.get(base.baseUrl + base.comment,{
             params
         })
     }

@@ -1,8 +1,12 @@
 const express = require("express");
+const url = require("url");
 const router = express.Router();
+// 引入需要的数据
 const homehot = require("./data/home/homehot");
 const searchData = require("./data/search");
-const url = require("url");
+const detailsData = require("./data/details");
+const commentData = require("./data/comment");
+
 
 // GET方法获取首页热门数据
 router.get("/home/hot1",(req,res) => {
@@ -34,6 +38,22 @@ router.get("/search",(req,res) => {
     res.send({
         status: 200,
         result: searchData
+    })
+})
+
+// GET获取详情页数据
+router.get("/details",(req,res) => {
+    const id = url.parse(req.url,true).query.id;
+    // console.log(id);
+    res.send(detailsData);
+})
+
+// GET方法获取评价
+router.get("/comment",(req,res) => {
+    const id = url.parse(req.url).query.id;
+    res.send({
+        status: 200,
+        result: commentData
     })
 })
 
